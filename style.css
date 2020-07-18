@@ -22,7 +22,7 @@ body {
 #header {
     text-align: center;
     width: 80%;
-    margin: 30px auto 0 auto;
+    margin: 20px auto 0 auto;
 }
 
 #header h1 {
@@ -71,15 +71,15 @@ button:active {
     width: 500px;
     height: 500px;
     margin: 15px auto 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(var(--numCols), 1fr);
+    grid-template-rows: repeat(var(--numRows), 1fr);
+    border-left: 1px solid #515052;
+    border-top: 1px solid #515052;
 }
 
 .box {
-    border: 1px solid #515052;
     background-color: #fff;
-}
-
-.boxhover {
-    background-color: #515052;
+    border-right: 1px solid #515052;
+    border-bottom: 1px solid #515052;
 }
